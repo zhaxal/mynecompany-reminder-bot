@@ -27,13 +27,13 @@ const formFunc = async (ctx) => {
   const reminderWeekdays = reminderData.weekday.split(",");
 
   const weekdays = [
-    "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
     "Friday",
     "Saturday",
+    "Sunday",
   ];
   const today = new Date();
   const weekday = weekdays[today.getDay()];
