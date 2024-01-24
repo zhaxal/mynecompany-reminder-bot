@@ -109,7 +109,7 @@ export const reminderScene = new Scenes.WizardScene(
       return ctx.scene.leave();
     }
     ctx.wizard.state.time = ctx.message.text;
-    ctx.wizard.state.weekday = ctx.wizard.state.weekdays.join(", ");
+    ctx.wizard.state.weekday = ctx.wizard.state.weekdays.join(",");
 
     const docRef = doc(db, "reminder", `bapool_${ctx.from.id}`);
 
